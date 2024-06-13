@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div class="topnav y" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="toggleSidePanel()">
+            <i class="fa fa-bars"></i>
+        </a><br>
+        <div class="nav_links">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contacts</a>
+        </div>
+    </div>
+
+    <section class="main">
+        <div class="side_panel">
+            <ul class="nav flex-column">
+                <li class="nav-item"><a href="index.html" class="nav_link">Home</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav_link">Projects</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav_link">Contacts</a></li>
+            </ul>
+        </div>
+
+        <div class="story">
+            <div class="top">
+                <div class="photo">
+                    <img src="resources/pic.jpg" alt="Image unavailable" class="img-fluid rounded-circle">
+                </div>
+                <div class="intro">
+                    <h1 class="zz">BRIAN M. KARIUKI</h1>
+                    <h5 class="name z">Cyber Security Analyst . Data Scientist . Software Developer</h5>
+                </div>
+            </div>
+            <div class="bottom">
+                <h5 class="hh name">About Me</h5>
+                <p>I am a young, energetic techie in the Kenyan Tech scene who is not only passionate about building great products, 
+                    but also a guy who enjoys helping the community. I am a graduate of JKUAT, BSc. Mathematics and Computer Science, 
+                    class of 2018. Besides the degree, I also possess several certificates in Data Analytics, Cyber Security, Data Science and Engineering.
+                </p>
+                <h5 class="hh name">Why Tech</h5>
+                <p>From a young age, both at home and school, I was always fascinated by computers. All my leisure time was spent in the company 
+                    of computers playing games, browsing, etc. This passion led me to pursue studies in computers. <br>
+                    As for me, I wanted to be able to digitise processes in our country since most services in this country are done physically 
+                    thus making service delivery inefficient. I also want to build projects that help my community. With these as my drivers, I took 
+                    the tech route since I was well conversant with the computer world. <br>
+                    To date, I have been able to do this, though at a small scale, and my aim is to improve the lives of Kenyans via tech products. 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleSidePanel() {
+            var navLinks = document.querySelector('.nav_links');
+            if (navLinks.style.display === 'block') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
+
+
