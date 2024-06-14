@@ -207,8 +207,8 @@ body {
     align-items: flex-start;
 }
 .dsc {
-    width: 99%;
-    margin: 10px auto;
+    width: 96%;
+    margin: 5px auto auto;
     border-radius: 15px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(3.7px);
@@ -228,18 +228,58 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     height: auto;
-    width: 98%;
-    margin: auto;
+    width: 96%;
+    margin: 1px auto auto;
 }
 .projo {
     background-color: #fff;
-    border: 2px solid black;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
     margin: 10px;
-    padding: 10px;
+    padding: 5px;
     width: 90%; 
     height: auto;
+    text-decoration: none;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
+.projo:hover {
+    transform: scale(1.07); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.projo .card-link {
+    display: block;
+    color: inherit; 
+    text-decoration: none;
+}
+.projo .card-link h5, .projo .card-link p {
+    text-decoration: none; 
+}
+
+/* Truncate the text to fit within three lines and show ellipsis */
+.projo-desc {
+    position: relative;
+    max-height: 5em; /* Approximately 3 lines of text */
+    overflow: hidden;
+    padding: 5px;
+}
+.projo-desc p {
+    display: inline;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+/* Hide the more-link initially */
+.more-link {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-decoration: none;
+}
+/* Ensure the more-link appears at the end of the truncated text */
+.projo-desc.more-visible .more-link {
+    display: inline;
+}
+
 .ttl {
     width: 100%;
 }
@@ -253,11 +293,10 @@ body {
 .yy {
     text-align: center;
     font-weight: bolder;
-    text-decoration: underline;
 }
-.projo-desc {
+/* .projo-desc {
     padding: 5px;
-}
+} */
 .quote {
     text-align: center;
     display: flex;
